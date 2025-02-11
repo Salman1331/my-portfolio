@@ -424,3 +424,24 @@
 
 
 })(jQuery, window)
+function sendToWhatsApp() {
+    // Get form values
+    var name = document.getElementById('contact-name').value;
+    var phone = document.getElementById('contact-phone').value;
+    var email = document.getElementById('contact-email').value;
+    var subject = document.getElementById('subject').value;
+    var message = document.getElementById('contact-message').value;
+
+    // Prepare the message string
+    var textMessage = "Name: " + encodeURIComponent(name) + "%0A" +
+                      "Phone: " + encodeURIComponent(phone) + "%0A" +
+                      "Email: " + encodeURIComponent(email) + "%0A" +
+                      "Subject: " + encodeURIComponent(subject) + "%0A" +
+                      "Message: " + encodeURIComponent(message);
+
+    // Create the WhatsApp URL
+    var whatsappURL = "https://wa.me/919945525217?text=" + textMessage;
+
+    // Open WhatsApp with the pre-filled message
+    window.open(whatsappURL, "_blank");
+}
