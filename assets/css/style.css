@@ -11935,7 +11935,7 @@ div#featured-project-carousel {
 /* Optional: Adjust for mobile responsiveness */
 @media (max-width: 575px) {
   .resume-section{
-    margin-left: 80px;
+    margin-left: 70px;
   }
   .resume-title {
     font-size: 28px; /* Adjust title font size on smaller screens */
