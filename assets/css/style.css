@@ -9371,7 +9371,12 @@ figcaption {
       .slide.slider-style-1.box-layout {
         padding-top: 157px; } }
     @media only screen and (max-width: 575px) {
-      .slide.slider-style-1.box-layout {
+      .slide .thumbnail .inner img {
+        border: 0;
+        vertical-align: middle;
+        max-width: 50%;
+        height: auto; }
+	    .slide.slider-style-1.box-layout {
         padding-top: 100px; } }
   .slide.slider-style-2 {
     padding-top: 180px; }
